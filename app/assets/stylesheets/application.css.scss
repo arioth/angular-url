@@ -1,0 +1,28 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background: image-url('background.gif');
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+}
+
+#main {
+  width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+}
+
+ul {
+  padding: 0 15px;
+}
+
+li {
+  list-style: none;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.text-danger {
+  color: #d9534f;;
+}

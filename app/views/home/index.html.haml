@@ -1,0 +1,12 @@
+#main{ng: {controller: 'TestController'}}
+  .form-url
+    .container-fluid
+      %form.form-horizontal{ng: {submit: 'submit()'}, novalidate: true}
+        .form-group{ng: {class: '{"has-error": error}'}}
+          .col-sm-12
+            %input.form-control{name: 'url', type: "text", ng: {model: 'inputUrl'}, placeholder: 'Enter the URL'}
+            %small.help-block.text-danger{ng: {if: 'error'}} Invalid URL
+    .show-urls
+      %ul
+        %li{ng: {repeat: 'resource in resources'}}
+          {{ resource.url }}
